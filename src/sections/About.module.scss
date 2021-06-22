@@ -1,0 +1,228 @@
+.SectionContainer {
+  display: flex;
+  flex-direction: row;
+  height: 800px;
+  width: 80%;
+  margin: auto;
+  color: #fff;
+  @media (max-width: 1250px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.SVGContainer {
+  div:first-child {
+    position: relative;
+    width: 100%;
+    margin: auto;
+  }
+  @media (max-width: 1250) {
+    width: 100%;
+  }
+}
+.AboutTxt {
+  color: #fff;
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  font-size: 1.5rem;
+  // top: calc(190px - 10%);
+  // left: calc(25% - 3vh);
+  margin-left: 23%;
+  margin-top: 20%;
+  h1 {
+    text-align: center;
+  }
+  @media (max-width: 1400px) {
+    margin-left: calc(13vw - 6em);
+    margin-top: 20%;
+  }
+  @media (max-width: 1250px) {
+    position: static;
+    width: 38%;
+    margin: auto;
+  }
+  @media (max-width: 940px) {
+    position: static;
+    width: 50%;
+    margin: auto;
+  }
+}
+
+.techContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 60%;
+  width: 60%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  @media (max-width: 1250px) {
+  }
+  div {
+    flex: 1;
+    flex-basis: 33%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  svg {
+    height: 60%;
+    width: auto;
+    @media (max-width: 1250px) {
+      height: 70%;
+    }
+  }
+}
+
+.svgspin1 {
+  animation-name: spin;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: absolute;
+  left: 0;
+  max-width: 680px;
+  @media (max-width: 1250px) {
+    width: 60%;
+    max-width: 650px;
+    margin-left: 21.8%;
+    bottom: -120px;
+  }
+  @media (max-width: 940px) {
+    width: 70%;
+    max-width: 600px;
+    margin-left: 16%;
+    bottom: -50px;
+    transform: scaleY(5);
+  }
+  @media (max-width: 600px) {
+    width: 100%;
+    max-width: 450px;
+    margin-left: 10%;
+  }
+}
+
+.svgspin2 {
+  animation-name: spin;
+  animation-duration: 45s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: absolute;
+
+  max-width: 680px;
+  @media (max-width: 1250px) {
+    max-width: 650px;
+    margin-left: 22%;
+    bottom: -120px;
+  }
+  @media (max-width: 940px) {
+    width: 70%;
+    max-width: 600px;
+    margin-left: 16%;
+    bottom: -50px;
+  }
+  @media (max-width: 600px) {
+    width: 100%;
+    max-width: 450px;
+    margin-left: 10%;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.svgJS {
+  &:hover {
+    color: #f0db4f;
+    height: 70%;
+    width: auto;
+    // border-radius: 50%;
+    box-shadow: 0 0 12px 0 #f0db4f;
+    transform: rotate(30deg);
+  }
+}
+.svgHTML {
+  &:hover {
+    color: #e34c26;
+    height: 70%;
+    box-shadow: 0 0 12px 0 #e34c26;
+    transform: rotate(30deg);
+  }
+}
+
+.svgCSS {
+  &:hover {
+    color: #2965f1;
+    height: 70%;
+    transform: rotate(30deg);
+  }
+}
+.svgSASS {
+  &:hover {
+    color: #cd6799;
+    height: 70%;
+    transform: rotate(30deg);
+    border-radius: 50%;
+    box-shadow: 0 0 12px 0 #cd6799;
+  }
+}
+
+.svgBS {
+  &:hover {
+    color: #563d7c;
+    height: 70%;
+    transform: rotate(30deg);
+    border-radius: 5px;
+    box-shadow: 0 0 12px 0 #563d7c;
+  }
+}
+
+.svgREACT {
+  &:hover {
+    color: #61dbfb;
+    height: 70%;
+    transform: rotate(30deg);
+    border-radius: 50%;
+    box-shadow: 0 0 12px 0 #61dbfb;
+  }
+}
+
+.svgREDX {
+  &:hover {
+    color: #764abc;
+    height: 70%;
+
+    transform: rotate(30deg);
+    border-radius: 100px 100px 35px 35px;
+    box-shadow: 0 0 12px 0 #764abc;
+  }
+}
+
+.svgNode {
+  &:hover {
+    color: #6cc24a;
+    height: 70%;
+    transform: rotate(30deg);
+  }
+}
+.svgGH {
+  &:hover {
+    height: 70%;
+    transform: rotate(30deg);
+    border-radius: 50%;
+    box-shadow: 0 0 12px 0 #fff;
+  }
+}
